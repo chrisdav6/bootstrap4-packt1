@@ -24,3 +24,40 @@ body {
   @media (max-width: 991.98px) {
     .nav-item .badge {
       left: -10px; } }
+
+.card-img {
+  margin-top: -36px;
+  width: 70px;
+  border: 2px solid white;
+  float: left; }
+
+.card-title {
+  margin-top: -15px;
+  float: left; }
+
+.card-title p {
+  margin-top: -5px; }
+
+.card-text {
+  clear: both; }
+
+.stats a:hover {
+  text-decoration: none; }
+
+.profile-stats {
+  color: #777;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.63em; }
+
+.profile-value {
+  color: #2f92ca;
+  font-size: 1.2em;
+  font-weight: bold; }
+
+#profilePhoto a:hover {
+  text-decoration: none; }
+
+#profilePhoto img {
+  width: 48%;
+  margin-bottom: 5px; }
