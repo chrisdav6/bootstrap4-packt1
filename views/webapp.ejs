@@ -69,17 +69,17 @@
   
   
   <!-- Profile Section -->
-  <section id="profile" class="py-5">
+  <section class="py-5">
     <div class="container">
       
       <div class="row">
-        <div class="col-md-5 col-lg-3 mr-auto">
+        <div id="profile" class="col-lg-3 col-md-4">
           
           <div class="card">
             <img src="img/landscape.jpg" class="img-fluid card-img-top">
             <div class="card-body">
               <img src="img/jon.png" class="card-img">
-              <div class="card-title ml-2">
+              <div class="card-title">
                 <h5 class="mb-0">Johnny Doo</h5>
                 <p><small>@johnnydoo</small></p>
               </div>
@@ -130,7 +130,90 @@
             </div>
           </div><!-- End of Card -->
       
-        </div><!-- End of Col-md-5 -->
+        </div><!-- End of col-lg-3 col-md-4 -->
+        
+        <div class="col-lg-9 col-md-8">
+            <!-- Nested row -->
+            <div class="row">
+              
+              <div id="main" class="col-xl-8 mt-4 mt-md-0">
+                <div class="alert alert-primary mb-3" role="alert">
+                  <form id="new-message">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="What is happening?">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-camera"></i></span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+                <!-- Posts -->
+                <div class="card">
+                  <div class="card-body">
+                    <ul id="feed" class="list-unstyled">
+                      <li>
+                        <img src="img/doge.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                          <h5 class="mb-1">Doge <small>@dogeofficial - 3h</small></h5>
+                          <p>You can't hold a dog down without staying down with him!</p>
+                        </div>
+                        <div class="action-list">
+                          <a href="#">
+                            <i class="fas fa-share"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fas fa-retweet"></i>
+                            <span class="retweet-count">6</span>
+                          </a>
+                          <a href="#">
+                            <i class="fas fa-star"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div><!-- End of Card -->
+                
+                <div class="card">
+                  <div class="card-body">
+                    <ul id="feed" class="list-unstyled">
+                      <li>
+                        <img src="img/laika.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                          <h5 class="mb-1">Laika <small>@spaceegg - 4h</small></h5>
+                          <p>You can't hold a dog down without staying down with him!</p>
+                        </div>
+                        <div class="action-list">
+                          <a href="#">
+                            <i class="fas fa-share"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fas fa-retweet"></i>
+                            <span class="retweet-count">6</span>
+                          </a>
+                          <a href="#">
+                            <i class="fas fa-star"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div><!-- End of Card -->
+                
+      
+                
+              </div><!-- End of col-xl-8 in nested row -->
+              
+              <div id="main" class="col-xl-4 mt-3 mt-xl-0">
+                <div class="alert alert-success" role="alert">
+                  <p>Who to follow</p>
+                </div>
+              </div><!-- End of col-xl-4 in nested row -->
+              
+            </div><!-- End of nested row -->
+        </div><!-- End of col-lg-9 col-md-8 -->
+
       </div><!-- End of Row -->
     
       
