@@ -1,0 +1,29 @@
+body {
+  background: #F5F8FA;
+}
+
+//Navbar
+
+.logo {
+  height: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .block-on-small {
+    display: block;
+    width: 100%;
+  }
+}
+
+//Remove caret from dropdown
+.dropdown-toggle::after {
+  display: none;
+}
+
+.user {
+  height: 2.3em;
+  
+  @media (max-width: 991.98px) {
+    height: 8em;
+  }
+}

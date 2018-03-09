@@ -1,0 +1,19 @@
+body {
+  background: #F5F8FA; }
+
+.logo {
+  height: 30px; }
+
+@media (max-width: 575.98px) {
+  .block-on-small {
+    display: block;
+    width: 100%; } }
+
+.dropdown-toggle::after {
+  display: none; }
+
+.user {
+  height: 2.3em; }
+  @media (max-width: 991.98px) {
+    .user {
+      height: 8em; } }
