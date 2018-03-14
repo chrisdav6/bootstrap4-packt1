@@ -193,20 +193,34 @@ body {
 /////////////Settings Page///////////////
 
 //Settings Side Nav
-
 .nav-pills .nav-link {
   border-radius: 0;
 }
 
-//End of Settings Side Nav
-
 
 //SettingsMiddle Nav
-
 #settings .card {
   border-radius: 0;
+  border-top: none;
 }
 
+//User Info Form
+#userInfo form .col-form-label {
+  text-align: left;
+  
+  @media (min-width: 575.9px) {
+    text-align: right;
+  }
+}
+
+//Stats Section
+.star {
+  background-color: #f0ad4e;
+}
+
+.fa-star {
+  color: white;
+}
 
 
 

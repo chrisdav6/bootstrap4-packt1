@@ -124,4 +124,17 @@ body {
   border-radius: 0; }
 
 #settings .card {
-  border-radius: 0; }
+  border-radius: 0;
+  border-top: none; }
+
+#userInfo form .col-form-label {
+  text-align: left; }
+  @media (min-width: 575.9px) {
+    #userInfo form .col-form-label {
+      text-align: right; } }
+
+.star {
+  background-color: #f0ad4e; }
+
+.fa-star {
+  color: white; }

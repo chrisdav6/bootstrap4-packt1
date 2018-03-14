@@ -137,22 +137,55 @@
                       </div>
                     </nav>
                     
-                    <div class="tab-content card" id="myTabContent">
+                    <div class="tab-content card" id="userInfo">
+                      
                       <div class="tab-pane fade show active" id="account-user" role="tabpanel">
-                        <div class="card-body">
-                          Account User Pane
+                        <div class="card-body pt-5">
+                          <form>
+                            <div class="form-group row">
+                              <label for="name" class="col-sm-3 col-form-label">Name</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="name" placeholder="Johnny Doo">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="username" class="col-sm-3 col-form-label">Username</label>
+                              <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="johnnydoo">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="email" class="col-sm-3 col-form-label">Email</label>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" placeholder="johnnydoo@dogmail.com">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-sm-9 ml-auto mt-3">
+                                <button type="submit" class="btn btn-success">Save Changes</button>
+                              </div>
+                            </div>
+                          </form>
                         </div>
                       </div>
+                      
                       <div class="tab-pane fade" id="account-language" role="tabpanel">
                         <div class="card-body">
                           Account Lanuage Pane
                         </div>
                       </div>
+                      
                       <div class="tab-pane fade" id="account-mobile" role="tabpanel">
                         <div class="card-body">
                           Account Mobile Pane
                         </div>
                       </div>
+                      
                     </div>
                   </div>
                   
@@ -174,33 +207,13 @@
               </div><!-- End of col-xl-8 in nested row -->
               
               <div id="right-content" class="col-xl-4 mt-3 mt-xl-0">
-                <div id="whoToFollow" class="card">
-                  <div class="card-header">
-                    Who To Follow
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-unstyled">
-                      <li class="mb-3">
-                        <img src="img/cat.jpg" class="rounded-circle">
-                        <div class="info">
-                          <strong>Crazy Cats</strong>
-                          <button class="btn btn-outline-dark btn-sm mt-1">
-                            <i class="fas fa-plus"></i> Follow
-                          </button>
-                        </div>
-                      </li>
-                      <li class="mb-3">
-                        <img src="img/ration.jpg" class="rounded-circle">
-                        <div class="info">
-                          <strong>Free Ration Alert</strong>
-                          <button class="btn btn-outline-dark btn-sm mt-1">
-                            <i class="fas fa-plus"></i> Follow
-                          </button>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">Dog Stats</li>
+                  <li class="list-group-item d-flex align-items-center">Number of day rides <span class="badge badge-success ml-auto">3</span></li>
+                  <li class="list-group-item d-flex align-items-center">Captured Mice <span class="badge badge-danger ml-auto">87</span></li>
+                  <li class="list-group-item d-flex align-items-center">Postmen Frightened <span class="badge badge-secondary ml-auto">2</span></li>
+                  <li class="list-group-item d-flex align-items-center">Always alert badge <span class="badge ml-auto star"><i class="fas fa-star"></i></span></li>
+                </ul>
               </div><!-- End of col-xl-4 in nested row -->
               
             </div><!-- End of nested row -->
