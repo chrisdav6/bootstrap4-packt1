@@ -13,6 +13,10 @@ app.get("/", function(req, res) {
   res.render("webapp");
 });
 
+app.get("/settings", function(req, res) {
+  res.render("settings");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");

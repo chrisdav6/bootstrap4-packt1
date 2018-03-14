@@ -116,3 +116,12 @@ body {
 
 #whoToFollow li .info .fa-plus {
   color: #2f92ca; }
+
+#madeTweet, #progress {
+  display: none; }
+
+.nav-pills .nav-link {
+  border-radius: 0; }
+
+#settings .card {
+  border-radius: 0; }

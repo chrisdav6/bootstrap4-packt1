@@ -96,6 +96,8 @@ body {
 
 
 
+/////////////Home Page///////////////
+
 //Main Section
 
 #main .card {
@@ -170,6 +172,39 @@ body {
 
 #whoToFollow li .info .fa-plus {
   color: #2f92ca;
+}
+
+//End of Who to follow Section
+
+
+
+//Alerts
+
+#madeTweet, #progress {
+  display: none;
+}
+
+//End of Alerts
+
+
+
+
+
+/////////////Settings Page///////////////
+
+//Settings Side Nav
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+//End of Settings Side Nav
+
+
+//SettingsMiddle Nav
+
+#settings .card {
+  border-radius: 0;
 }
 
 
