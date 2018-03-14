@@ -100,3 +100,19 @@ body {
 .retweet-count {
   padding-left: 0.2em;
   font-weight: bold; }
+
+#whoToFollow li img {
+  width: 26%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%; }
+
+#whoToFollow li .info {
+  width: 68%;
+  display: inline-block; }
+
+#whoToFollow li .info strong {
+  display: block; }
+
+#whoToFollow li .info .fa-plus {
+  color: #2f92ca; }
