@@ -222,5 +222,16 @@ body {
   color: white;
 }
 
+//Messages Modal
+
+.messages li {
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+
+.messages li:last-child {
+  border-bottom: none;
+}
+
 
 

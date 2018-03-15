@@ -25,7 +25,7 @@
             <a class="nav-link text-light badge-link" href="#"><span class="badge badge-success">9</span><i class="fas fa-bell"></i> Notifications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#"><i class="fas fa-envelope"></i> Messages</a>
+            <a class="nav-link text-light" href="#" data-toggle="modal" data-target="#messages-modal"><i class="fas fa-envelope"></i> Messages</a>
           </li>
         </ul>
         
@@ -298,6 +298,45 @@
             <button type="submit" class="btn btn-primary modal-send-tweet">Send Tweet</button>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Messages Modal -->
+  <div class="modal fade" id="messages-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Messages!</h5><button class="btn btn-success">New Message</button>
+        </div>
+        <div class="modal-body">
+          <ul id="feed" class="list-unstyled messages">
+            <li>
+              <img src="img/laika.jpg" class="feed-avatar rounded-circle">
+              <div class="feed-post">
+                <h5 class="mb-1">Laika <small>@spaceegg</small></h5>
+                <p>Hey Johnny, how is it down there?</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/doge.jpg" class="feed-avatar rounded-circle">
+              <div class="feed-post">
+                <h5 class="mb-1">Laika <small>@dogeofficial</small></h5>
+                <p>Wow! I'm a meme!</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/cat.jpg" class="feed-avatar rounded-circle">
+              <div class="feed-post">
+                <h5 class="mb-1">Cat <small>@theCat</small></h5>
+                <p>I want some nip!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
