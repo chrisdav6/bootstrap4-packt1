@@ -1,7 +1,24 @@
 $(function() {
   
-  //Enable Bootstrap tooltips
+  //Enable Bootstrap tooltips and popovers
   $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+  
+  
+  //Handle popover hover and click
+  $(".btn-popover").hover( 
+  function() {
+    $(this).popover("show");
+  },function() {
+    $(this).popover("hide");
+  }).on("click", function() {
+    $(this).popover("dispose");
+  });
+  
+  $(".btn-popover").on("click", function() {
+    $(this).popover("hide");
+    $(this).html("<i class='fas fa-check' style='color: green;'></i> Following");
+  });
   
   
   //Handle Whats happening Tweet Form
