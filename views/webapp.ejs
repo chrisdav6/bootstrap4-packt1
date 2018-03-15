@@ -8,7 +8,7 @@
         <img src="img/logo.png" class="logo">
       </a>
       
-      <button class="btn btn-outline-primary d-block d-lg-none ml-auto mr-3" type="button"><i class="fab fa-twitter"></i> Tweet</button>
+      <button class="btn btn-outline-primary d-block d-lg-none ml-auto mr-3" type="button" data-toggle="modal" data-target="#tweet-modal"><i class="fab fa-twitter"></i> Tweet</button>
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
  
         <ul class="navbar-nav d-none d-lg-block">
           <li class="nav-item">
-            <button class="btn btn-outline-primary my-2 my-lg-0" type="button"><i class="fab fa-twitter"></i> Tweet</button>
+            <button class="btn btn-outline-primary my-2 my-lg-0" type="button" data-toggle="modal" data-target="#tweet-modal"><i class="fab fa-twitter"></i> Tweet</button>
           </li>
         </ul>
         
@@ -140,7 +140,7 @@
                 <div id="whatsHappening" class="alert alert-primary mb-3" role="alert">
                   <form id="new-message">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="What is happening?">
+                      <input type="text" class="form-control" placeholder="What's happening?">
                       <div class="input-group-append">
                         <button class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
                       </div>
@@ -173,14 +173,14 @@
                           <p>You can't hold a dog down without staying down with him!</p>
                         </div>
                         <div class="action-list">
-                          <a href="#">
+                          <a href="#" data-toggle="tooltip" data-placement="left" title="Reply">
                             <i class="fas fa-share"></i>
                           </a>
-                          <a href="#">
+                          <a href="#" data-toggle="tooltip" data-placement="left" title="Retweet">
                             <i class="fas fa-retweet"></i>
                             <span class="retweet-count">6</span>
                           </a>
-                          <a href="#">
+                          <a href="#" data-toggle="tooltip" data-placement="left" title="Start">
                             <i class="fas fa-star"></i>
                           </a>
                         </div>
@@ -199,14 +199,14 @@
                           <p>You can't hold a dog down without staying down with him!</p>
                         </div>
                         <div class="action-list">
-                          <a href="#">
+                          <a href="#" data-toggle="tooltip" data-placement="left" title="Reply">
                             <i class="fas fa-share"></i>
                           </a>
-                          <a href="#">
+                          <a href="#" data-toggle="tooltip" data-placement="left" title="Retweet">
                             <i class="fas fa-retweet"></i>
-                            <span class="retweet-count">6</span>
+                            <span class="retweet-count">10</span>
                           </a>
-                          <a href="#">
+                          <a href="#" data-toggle="tooltip" data-placement="left" title="Start">
                             <i class="fas fa-star"></i>
                           </a>
                         </div>
@@ -273,5 +273,33 @@
     </div>
   </section>
   <!-- End of Profile Section -->
+  
+  
+  
+  <!-- Modals -->
+  
+  <!-- Tweet Modal -->
+  <div class="modal fade" id="tweet-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Dog a new tweet!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="modal-tweet-form">
+          <div class="modal-body">
+            <textarea name="tweetText" id="tweetText" class="form-control" rows="4" placeholder="What you want to bark!" maxlength="280"></textarea>
+          </div>
+          <div class="modal-footer">
+            <span class="char-count text-muted mr-auto">280</span>
+            <button type="button" class="btn btn-outline-secondary modal-close-tweet" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary modal-send-tweet">Send Tweet</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 <% include ./partials/footer %>
