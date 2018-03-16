@@ -17,6 +17,10 @@ app.get("/settings", function(req, res) {
   res.render("settings");
 });
 
+app.get("/dashboard", function(req, res) {
+  res.render("dashboard");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");

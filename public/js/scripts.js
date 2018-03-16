@@ -76,4 +76,17 @@ $(function() {
     }
   });
   
+  //Make Search Input larger when focused on larger screens
+  if($("body").innerWidth() > 576) {
+    $("#search").on("focus", function() {
+      $(this).animate({
+        width: "+=50px"
+      },300);
+    }).on("blur", function() {
+       $(this).animate({
+        width: "-=50px"
+      },300);
+    });
+  }
+  
 });

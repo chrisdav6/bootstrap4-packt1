@@ -1,0 +1,51 @@
+<% include ./partials/header %>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="navbar-header d-flex align-items-center">
+      <a class="navbar-brand" href="/">
+        <h1>DashBoard</h1>
+      </a>
+      <a href="#" class="ml-3 text-light">
+        <i class="fas fa-sync-alt fa-2x"></i>
+      </a>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline ml-0 ml-lg-5 my-2 my-lg-0">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+          </div>
+          <input type="text" class="form-control" id="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+        </div>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li>
+          <div id="btn-notifications" class="btn-group">
+            
+            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Notifications
+            </button>
+            <ul id="notification-list" class="dropdown-menu">
+              <li>
+                <a href="#">
+                  <img src="img/laika.jpg" class="rounded-circle">
+                  <div class="notifications-message">
+                    <strong>Laika</strong>
+                    <p>Hey, how are you?</p>
+                    <em class="since">2h ago</em>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<% include ./partials/footer %>
